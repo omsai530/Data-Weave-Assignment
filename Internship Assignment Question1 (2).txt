@@ -1,0 +1,57 @@
+Some ground rules:
+------------------------------------------------------------------------------------------------------------------
+1. We prefer it if you used Python for coding. But if you are more comfortable with something else, feel free to use that.
+2. Please add the question (in comment) before writting your code.
+3. You may use some standard libraries, but your solution will not be acceptable if you use readily available libraries or third party tools to solve the core of the problem.
+
+4. DO NOT use any readily available code from the web. We value intellectual honesty.
+5. Create a README file describing exactly how to run your scripts. Describe all the major design decisions that you make.
+6. Please make reasonable assumptions when in doubt.
+
+
+Case of Disqualification:
+------------------------------------------------------------------------------------------------------------------
+1. If you are using jupiter notebook, Please generate .py file and then share.
+2. Atleast 70% of questions to be answered.
+3. DO NOT give us separate script for each question. Max of 2 .py files will be accepted, not more than this limit.
+
+
+Questions:
+------------------------------------------------------------------------------------------------------------------
+
+Given two JSON files (yesterday.json, today.json), write a small analytics program to perform the following:
+
+1. Number of URLH which are overlapping (Common) in two files.
+
+2. For all the URLH which are overlapping, calculate the price difference (wrt available_price) if there is any between yesterday's and today's crawls (scraped data). There might be duplicate URLHs in which case you can choose the first valid (with http_status 200) record.
+
+3. Number of Unique categories in both files.
+
+4. Display List of categories which is not overlapping (Common) from two given files.
+
+5. Generate the stats with count of urlh for all taxonomies (taxonomy is concatenation of category and subcategory separated by " > ") for today's file.
+Eg:
+Cat1 > Subcat1: 3500
+Cat1 > Subcat2: 2000
+Cat2 > Subcat3: 8900
+
+6. Generate a new file where mrp is normalized. If there is a 0 or a non-float value or the key doesn't exist, make it "NA".
+
+7. Display the title and price of 10 items having least price.
+Eg:
+Title1 --> its price
+Title2 --> its price
+upto 10
+
+8. Display the top 5 subcategory having highest items.
+
+9. Display stats of how many items have failed status (http_status other than 200 is to be considered as failure).
+Eg.
+http_status     count
+500             23
+404             12
+
+------------------------------------------------------------------------------------------------------------------
+Note: Optimized & clean code will be rewarded , amount of attention given to space / time complexity will be appreciated!
+      Please add the question (in comment) before solving each problem in your code.
+      And most importantly, have fun!
